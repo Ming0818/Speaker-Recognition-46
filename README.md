@@ -29,9 +29,9 @@ I was hoping to train the model on at 50 audiobooks but due to time-constraints 
 
 ## Results
 After training the CNN on spectrograms from 6 people, I got a training accuracy of 99% and a validation accuracy of 88%. 
-Using this trained CNN as a feature extractor, I used an SVM to learn the features of 3 new speakers from different audio books. The results came to around 62% but that was because the second speaker was severely missclassified. <br>
+Using this trained CNN as a feature extractor, I used an SVM to learn the features of 3 new speakers from different audio books. The results came to around 62% but that was because the second speaker was severely misclassified. <br>
 
-<img src="conf.png"></img>    
+<img src="conf.PNG"></img>    
 <br>
 
 You can see that the predictions for the 1st and 3rd speaker are pretty good, but the 2nd speaker never gets classified.
