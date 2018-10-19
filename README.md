@@ -18,7 +18,8 @@ For processing each audiobook I followed this process. I used command line tools
 5.Split each wav file into 5 second segments using ffmpeg.<br>
 6.Convert each segment into a spectrogram using sox to input into a convolutional neural network . A spectrogram is a visual representation of a spectrum of frequencies of over time<br>
 <br>
-![Example Spectrogram](ex_spec.png =256x400)
+
+<img src="ex_spec.png" width="256" height="400" />
     
 ## Modeling
 For modeling I used a Convolutional Neural Network trained on six people, then I used transfer learning to take features extracted from the CNN to use as inputs for an SVM model. 
