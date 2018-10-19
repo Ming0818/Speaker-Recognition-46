@@ -11,14 +11,14 @@ I downloaded the zip files of around 100 audiobooks, all of which were split up 
 ## Processing
 For processing each audiobook I followed this process. I used command line tools like ffmpeg, sox, and mp3wrap.
 
-1.Using mp3wrap, combine audio files from a single book since they were split up into chapters.
-2.Using ffmpeg, cut each audio file down to 45min
-3.Using ffmpeg, convert each audio file from mp3 to wav.
-4.Remove silence longer than 0.5 seconds using sox.
-5.Split each wav file into 5 second segments using ffmpeg.
-6.Convert each segment into a spectrogram using sox to input into a convolutional neural network . A spectrogram is a visual representation of a spectrum of frequencies of over time
-
-![Example Spectrogram](ex_spec.png)
+1.Using mp3wrap, combine audio files from a single book since they were split up into chapters.<br>
+2.Using ffmpeg, cut each audio file down to 45min<br>
+3.Using ffmpeg, convert each audio file from mp3 to wav.<br>
+4.Remove silence longer than 0.5 seconds using sox.<br>
+5.Split each wav file into 5 second segments using ffmpeg.<br>
+6.Convert each segment into a spectrogram using sox to input into a convolutional neural network . A spectrogram is a visual representation of a spectrum of frequencies of over time<br>
+<br>
+![Example Spectrogram](ex_spec.png =256x400)
     
 ## Modeling
 For modeling I used a Convolutional Neural Network trained on six people, then I used transfer learning to take features extracted from the CNN to use as inputs for an SVM model. 
