@@ -38,7 +38,7 @@ I use an SVM since I want to be able to classify new people with the model I tra
 The way transfer learning is implemented is to take the trained model , cut off the last classification layers and attach it to another neural network or machine-learning architecture. This technique is widely used in computer vision and natural language processing as a starting point for models that are doing similar tasks. From here models are either retrained, repurposed, and/or used as feature extractors.<br>
 
 ## Limitations
-I was hoping to train the model on at 50 audiobooks but due to time-constraints and memory issues, I was unable to process all the audio spectorgrams. 50 models would have been optimal since the network would be able to capture more voices. Also an SVM's runtime in O(n^3) so if I load too much data , it will take a long time to train. <br>
+I was hoping to train the model on 50 audiobooks but due to time-constraints and memory issues, I was unable to process all the audio spectorgrams. 50 models would have been optimal since the network would be able to capture more voices. Also an SVM's runtime in O(n^3) so if I load too much data , it will take a long time to train. <br>
 
 ## Results
 After training the CNN on spectrograms from 6 people, I got a training accuracy of 99% and a validation accuracy of 88%. 
