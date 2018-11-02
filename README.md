@@ -48,6 +48,9 @@ Using this trained CNN as a feature extractor, I used an SVM to learn the featur
 <br>
 
 You can see that the predictions for the 1st and 3rd speaker are pretty good, but the 2nd speaker never gets classified. I am suspecting that it may be because the model is too biased and or at some point the author does voices. 
+
+## Next Steps
+Converting audio to picture format isn't the best way to process audio so I intend to use different methods to process audio waveform data that are more state-of-the-art. These methods seems to be more rigourous and use less memory. There's a lot of work on this topic so making headway from here shouldn't be too hard. 
     
     
     
